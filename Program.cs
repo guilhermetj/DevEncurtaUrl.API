@@ -1,5 +1,7 @@
 using DevEncurtaUrl.API.Persistence;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using Serilog.Sinks.MSSqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,10 +20,21 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Host.ConfigureAppConfiguration((hostingContext, config) => {
+    Serilog.Log.Logger = new LoggerConfiguration()
+    .Enrich.FromLogContext()
+    .WriteTo.MSSqlServer(connectionsString,
+    sinkOptions: new MSSqlServerSinkOptions() {
+        AutoCreateSqlTable = true,
+        TableName = "Logs"
+    })
+    .WriteTo.Console()
+    .CreateLogger();
+}).UseSerilog();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (true)
 {
     app.UseSwagger();
     app.UseSwaggerUI();

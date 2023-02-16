@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj": {}
+    "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj": {}
   },
   "projects": {
-    "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj": {
+    "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
+        "projectUniqueName": "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
         "projectName": "DevEncurtaUrl.API",
-        "projectPath": "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
+        "projectPath": "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\obj\\",
+        "outputPath": "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,6 @@
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,6 +56,14 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[6.2.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
