@@ -37,7 +37,8 @@ namespace DevEncurtaUrl.API.Controllers
         [HttpPost]
         public IActionResult Post(AddOrUpdateShortenedLinkModel model){
             var link = new ShortenedCustomLink(model.Title, model.DestinationLink);
-            _context.Add(link);
+            _context.Links.Add(link);
+            _context.SaveChanges();
             return CreatedAtAction("GetById", new {id = link.Id}, link);
         }
 
@@ -49,17 +50,20 @@ namespace DevEncurtaUrl.API.Controllers
             }
             link.Update(model.Title, model.DestinationLink);
 
+            _context.Links.Update(link);
+            _context.SaveChanges();
+
             return NoContent();
         }
         [HttpDelete("{id}")]
         public IActionResult Delete(int id){
-           var link = _context.Links.SingleOrDefault(l => l.Id == id);
+            var link = _context.Links.SingleOrDefault(l => l.Id == id);
             if(link == null){
                 return NotFound();
             }
-           _context.Links.Remove(link);
-
-           return NoContent();
+            _context.Links.Remove(link);
+            _context.SaveChanges();
+            return NoContent();
         }
         // localhsot:3000/ultimo-artigo
         [HttpGet("/{code}")]

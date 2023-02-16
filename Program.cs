@@ -1,9 +1,10 @@
 using DevEncurtaUrl.API.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<DevEncurtaUrlDbContext>();
+builder.Services.AddDbContext<DevEncurtaUrlDbContext>(o => o.UseInMemoryDatabase("DevEncurtaDb"));
 builder.Services.AddCors(options => {
         options.AddDefaultPolicy(
             policy => {

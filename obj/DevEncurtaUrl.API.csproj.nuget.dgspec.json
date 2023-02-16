@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj": {}
+    "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj": {}
   },
   "projects": {
-    "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj": {
+    "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
+        "projectUniqueName": "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
         "projectName": "DevEncurtaUrl.API",
-        "projectPath": "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
+        "projectPath": "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\obj\\",
+        "outputPath": "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,6 @@
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +42,20 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

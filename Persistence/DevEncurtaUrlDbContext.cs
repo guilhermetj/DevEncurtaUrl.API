@@ -3,24 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DevEncurtaUrl.API.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace DevEncurtaUrl.API.Persistence
 {
-    public class DevEncurtaUrlDbContext
+    public class DevEncurtaUrlDbContext : DbContext
     {
-        private int _currentIndex = 1;
-        public DevEncurtaUrlDbContext()
+        public DevEncurtaUrlDbContext(DbContextOptions<DevEncurtaUrlDbContext> options) : base(options)
         {
-            Links = new List<ShortenedCustomLink>();
+         
         }
 
-        public List<ShortenedCustomLink> Links { get; set; }
+        public DbSet<ShortenedCustomLink> Links { get; set; }
 
-        public void Add(ShortenedCustomLink link){
-            link.Id = _currentIndex;
-
-            _currentIndex ++;
-            Links.Add(link);
+        protected override void OnModelCreating(ModelBuilder builder){
+            builder.Entity<ShortenedCustomLink>(e => e.HasKey(l => l.Id));
         }
     }
 }
