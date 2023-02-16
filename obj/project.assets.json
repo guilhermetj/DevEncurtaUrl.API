@@ -4489,11 +4489,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
+      "projectUniqueName": "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
       "projectName": "DevEncurtaUrl.API",
-      "projectPath": "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
+      "projectPath": "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
       "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-      "outputPath": "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\obj\\",
+      "outputPath": "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4503,6 +4503,7 @@
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

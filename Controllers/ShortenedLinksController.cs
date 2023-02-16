@@ -6,6 +6,7 @@ using DevEncurtaUrl.API.Entities;
 using DevEncurtaUrl.API.Models;
 using DevEncurtaUrl.API.Persistence;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace DevEncurtaUrl.API.Controllers
 {
@@ -22,6 +23,7 @@ namespace DevEncurtaUrl.API.Controllers
 
         [HttpGet]
         public IActionResult Get(){
+            Log.Information("Listagem foi chamada!");
             return Ok(_context.Links);
         }
 
