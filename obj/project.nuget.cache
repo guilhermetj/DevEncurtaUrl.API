@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qv4kNe/gvMmEdK45qWHDuspV7kE655KzASxdExy08sHNN9ZaSEsMW2gSM7/hHY9eT/s9ey85P1SOm8rb9ovYtA==",
+  "dgSpecHash": "v0VA4v6+jyb/N8pbe1qUeCDSNSXgRY4Yt7f/ATxP8V97wUAXIAidz97lwA43N9gA2ul1KIUxJOPyOJ3FSn1TSw==",
   "success": true,
-  "projectFilePath": "c:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
+  "projectFilePath": "C:\\Projetos_Guilherme\\DevEncurtaUrl\\DevEncurtaUrl.API\\DevEncurtaUrl.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

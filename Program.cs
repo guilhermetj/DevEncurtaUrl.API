@@ -4,7 +4,8 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<DevEncurtaUrlDbContext>(o => o.UseInMemoryDatabase("DevEncurtaDb"));
+var connectionsString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<DevEncurtaUrlDbContext>(o => o.UseSqlServer(connectionsString));
 builder.Services.AddCors(options => {
         options.AddDefaultPolicy(
             policy => {
